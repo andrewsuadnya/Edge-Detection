@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Edge Detection</title>
+</head>
+<body>
+    <div class="header"></div>
+    <p class="text">Image Edge Detection</p>
+    <p class="text2">Easily to Detect Your Image</p>
+
+    <div class="container-tombol">
+    <form method="POST" action="/" enctype="multipart/form-data" onsubmit="return validateForm()">
+        <label for="file-input" class="custom-file-upload"><i class="fa-solid fa-upload"></i> Uploud Gambar</label>
+        <input type="file" id="file-input" name="image" accept="image/*" onchange="previewImage(event)">
+        <select name="operator" class="operator">
+            <option value="sobel">Sobel</option>
+            <option value="roberts">Roberts</option>
+            <option value="prewitt">Prewitt</option>
+            <option value="laplace">Laplace</option>
+            <option value="frei-chen">Frei-chen</option>
+        </select>
+        <input type="submit" value="DETECT!" class="detect-button">
+        <p class="error-message" id="error-message"></p>
+    </form>
+</div>
+    
+    <div class="container">
+        <div class="image-container">
+            <h2>Gambar Asli</h2>
+            {% if original_image_base64 %}
+                <img id="original-image" src="data:image/png;base64,{{ original_image_base64 }}" alt="Original Image">
+            {% else %}
+                <img id="original-image" src="" alt="Original Image">
+            {% endif %}
+        </div>
+        
+        {% if edges_base64 %}
+        <div class="image-container">
+            <h2>Hasil Deteksi</h2>
+            <img src="data:image/png;base64,{{ edges_base64 }}" alt="Detected Edges">
+            <a href="data:image/png;base64,{{ edges_base64 }}" download="detected_edges.png" class="download-button"><i class="fa-solid fa-download"></i> Download</a>
+        </div>
+        {% endif %}
+    </div>
+
+
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
