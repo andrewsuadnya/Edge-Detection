@@ -21,7 +21,7 @@ The goal of this project is to develop an application that enables users to perf
 ## Usage
 
 1. Clone this repository to your local machine.
-2. Install the necessary dependencies using `pip install -r requirements.txt`.
+2. Navigate to the project directory.
 3. Run the Flask application using `python app.py`.
 4. Access the application in your web browser at `http://localhost:5000`.
 
