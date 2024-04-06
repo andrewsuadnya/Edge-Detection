@@ -8,6 +8,8 @@ This repository contains the project assignment for the "Pengolahan Citra Digita
 
 The goal of this project is to develop an application that enables users to perform edge detection on images. Users can upload images and select from a range of edge detection operators including Sobel, Roberts, Prewitt, Laplace, or Frei-Chen. The application then displays the resulting edge-detected image alongside the original one.
 
+![Screenshot 2023-06-08 134806](https://github.com/andrewsuadnya/Edge-Detection/assets/90898706/8d1d3d15-dad8-45a2-b01e-9ffce0ebd43c)
+
 ## Features
 
 - Upload images for edge detection
