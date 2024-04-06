@@ -1,6 +1,8 @@
 # Digital Image Processing Project
 
-This repository contains the project assignment for the "Digital Image Processing" course. The project focuses on implementing edge detection techniques on images using Python and OpenCV.
+This repository contains the project assignment for the "Pengolahan Citra Digital (Digital Image Processing)" course. The project focuses on implementing edge detection techniques on images using Python and OpenCV.
+
+![Screenshot 2023-06-08 134550](https://github.com/andrewsuadnya/Edge-Detection/assets/90898706/e960bfbd-6766-4b14-90ed-6b75c3c7e50d)
 
 ## Project Description
 
